@@ -92,7 +92,7 @@ int left(PriorityQueue Q, int i) {
 }
 
 int main() {
-    freopen("/home/riverflow/Desktop/Input/Merge/merge01.inp", "r", stdin);
+    /* freopen("/home/riverflow/Desktop/Input/Merge/merge01.inp", "r", stdin); */
     int n;
     PriorityQueue Q = {{}, 0};
     scanf("%d", &n);
