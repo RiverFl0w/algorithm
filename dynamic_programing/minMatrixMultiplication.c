@@ -14,7 +14,6 @@ int minMatrix(int arr[], int matrix[][MAX], int x, int y) {
 			min = each;
 		}
 	}
-	//printf("%d\n", min);
 	
 	return min;
 }
@@ -32,13 +31,11 @@ int main() {
 	}
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n - i; j++) {
-			int res = minMatrix(arr, matrix, j, j + i);
-			matrix[j][j + i] = res;
+			matrix[j][j + i] = minMatrix(arr, matrix, j, j + i);
 		}
 	}
 	
 	printf("%d", matrix[0][n - 1]);
 
-	
 	return 0;
 }
