@@ -11,7 +11,7 @@ typedef Node* List;
 
 void makeNull(List *list) {
     *list = (Node*)malloc(sizeof(Node));
-    *list->next = NULL;
+    (*list)->next = NULL;
 }
 
 void unshift(List *list, Datatype key) {

@@ -63,10 +63,10 @@ int main() {
         if (things[i].weight > remain) {
             value += (double)remain * things[i].value / things[i].weight;
             break;
-        } else {
-            value += things[i].value;
-            remain -= things[i].weight;
         }
+
+        value += things[i].value;
+        remain -= things[i].weight;
     }
 
     printf("%.4f\n", value);
